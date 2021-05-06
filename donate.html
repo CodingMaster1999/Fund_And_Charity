@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+.full-page{
+height:100%;
+width:100%;
+background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+background-position:center;
+background-size:cover;
+position:absolute;
+}
+.navbar
+{
+display:flex;
+align-item:center;
+padding:50px;
+padding-left:50px;
+padding-right:30px;
+padding-top:50px;
+padding-bottom:50px;
+position:fixed;
+}
+nav
+{
+flex:1;
+text-align:right;
+}
+nav ul
+{
+display:inline-block;
+list-style:none;
+}
+nav ul li
+{
+display:inline-block;
+margin-right:50px;
+}
+nav ul li a
+{
+text-decoration:none;
+color:aqua;
+font-family:sans-sarif;
+font-weight:35px;
+font-weight:bold;
+display:flex;
+justify-content:space-between;
+text-transform :uppercase;
+}
+nav ul li a:hover
+{
+color:#000;
+float: right;
+background-color:#ffff;
+
+}
+a{
+text-decoration:none;
+color:palevioletred;
+}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+
+	<!--Load hover.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+
+	<!--Load CSS File-->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+	<title>Fund and Charity: Donate Page</title>
+</head>
+
+<body>
+	
+	<div class="full-page">
+	<div class="navbar">
+	<div>
+	<a href="home.html"><h2 background-color:aqua><b>Fund and Charity</b></h2></a>
+	</div>
+	<nav>
+	<ul id="MenuItems">
+	<li><a href="home.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="statistics.html">Statistics</a></li>
+	<li><a href="donate.html">Donate</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+	</nav>
+	</div>
+	</div>
+    <article>
+	
+        <section>
+            <div id="AsiaAfricaCharityCarouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#AsiaAfricaCharityCarouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 charityAsiaPic1" title="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 charityAfricaPic" title="Second slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 charityAsiaPic2" title="Third slide">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#AsiaAfricaCharityCarouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+             </a>
+                <a class="carousel-control-next" href="#AsiaAfricaCharityCarouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </section>
+		<center>
+        <section>
+            <div class="container">
+                <h1 class="charitiesH1 text-center header" ><font color="black">Charities</font></h1>
+                <p class="donatePageTextColor text-center">You will be directed to the pages of the charity organisations. One to three of popular charity organisations are presented for each of the countries that are below. Also, I do not provide donation services.</p>
+                <p class="donatePageTextColor text-center">A calculator can be used to calculate how much you would like to donate by clicking on the calculator icon in the sidebar on the left-hand side of the web page.</p>
+            </div>
+        </section>
+
+        <!--Calculator-->
+        <section id="calculator-wrapper">
+            <div class="calculatorSection container">
+                <div class="justify-content-sm-center row">
+                    <div class="col-12 text-center donatePageTextColor calcTextBG" id="calculatorSectionHeader">
+                        <h5>Click & Hold Here To Move. Calculate How Much You Would Like to Donate</h5>
+                    </div>
+                    <div class="col-12 calc-no-padding">  
+                        <form>
+                            <input type="text" class="screen" />
+                        </form>
+                    </div>
+                </div>
+       
+
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- Symbol buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="0">0</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="1">1</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="2">2</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="+">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- number buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="3">3</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="4">4</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="5">5</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="-">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- number buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="6">6</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="7">7</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="8">8</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="*">x</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <div class="buttons">
+                            <!-- number buttons -->
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num="9">9</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnGrey" data-num=".">.</button>
+                            <button type="button" class="btn-clear calcBtnStyle calcBtnRed">C</button>
+                            <button type="button" class="calcBtn calcBtnStyle calcBtnYellow" data-num="/">/</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center calc-no-padding">
+                        <button type="button" class="btn-equal calcBtnStyle calcBtnGreen">=</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+        
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="text-center donatePageTextColor">
+                          
+                        </div>
+                        <center>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse"></button>
+                                    <div class="charity-text text-center">
+                                        <h3>Muslim Global Relief</h3>
+                                        <p>
+                                            The Muslim Global Relief has been awarded as the "Charity Of The Year 2021" by the National British Muslim Awards. Syria has been in war for years now and people are still dying and suffering everyday. This has caused 13.1 million of them to be in need,
+                                            making it to the largest humanitarian crisis of all time. Eastern Ghouta has been lead to its near total destruction and 4,000,000 inhabitants are therefore suffering and unable too flee. At the same time, they
+                                            are at risk to be bombarded at any time and see people being crushed under heavy bricks! Through your donation, you have a helping hand to save lives!
+                                        </p>
+                                        <a href="https://www.muslimglobalrelief.org/syria-emergency-appeal/?gclid=Cj0KCQjw3PLnBRCpARIsAKaUbgvUScWalFRhKSaO9QfHb4Yqc6ELL2ZnKetlWrllvhLzkHA6GlKolYoaAh5HEALw_wcB" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        </center>
+						<center>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse"></button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Save the Children</h3>
+                                        <p>Indonesia has suffered a lot from earthquakes, tsunamis, volcanic eruptions, floods and political instability. The economy is struggling nad the poverty is widespreaded. Malnutrition causes tons of children to have
+                                            stunted growth, many of them die under the age of five and child labour is still going on there! However, you can make a change and help those children to have educations and a better future ahead of them!</p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/asia/indonesia" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+						</center>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse"></button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Educate for Life</h3>
+                                        <p>This organisation helps Indians by building schools in rural areas and providing education, healthcare, and community work for them. To find out more and donate please click on the button below.</p>
+                                        <a href="https://www.educateforlife.org.uk/?gclid=Cj0KCQjwov3nBRDFARIsANgsdoHuIokzfAvWhEunEczs1grnd4VH6rh0tflLgN2qm_stAsozX9pVWR8aApWpEALw_wcB" target="_blank" class="btn donateButtonStyle">Donate here</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="charity-collapse"></button>
+
+                                    <div class="charity-text text-center">
+                                        <h3>Charity: Water and Save the Children</h3>
+                                        <p>Bolivia is the poorest country in South America with 39% of people living in poverty and 26% being engaged in child labour. They require your assistance to receive better education, medical care and enough food.
+                                            Please click the buttons below to find out more and to donate!</p>
+                                        <a href="https://www.charitywater.org/our-projects/south-america/bolivia" target="_blank" class="btn donateButtonStyle">Donate to 'Charity: Water'</a>
+                                        <p>OR</p>
+                                        <a href="https://www.savethechildren.org/us/what-we-do/where-we-work/latin-america/bolivia" target="_blank" class="btn donateButtonStyle">Donate to 'Save the Children'</a>
+                                    </div>
+                                    <div class="charity-1-img"></div>
+                                </div>
+                            </div>
+                        </div>
+</center>
+</center>
+    <aside>
+        <div>
+            <ul class="social-media-button d-none d-sm-block">
+                <li class="calculator-aside"><div class="sideCalculator" id="calcBtn"><i class="fa fa-calculator"></i></div></li>
+                <li class="facebook-aside"><a href="http://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li class="twitter-aside"><a href="http://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="youtube-aside"><a href="http://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                <li class="instagram-aside"><a href="http://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 text-center">
+                    <ul class="footer-list"><b>
+                        <li><a href="tel: 12 3456 7890" class="footer-link">Phone number: +91 12 4567 7890</li>
+                        <li><a href="contact.html" class="footer-link">Send Me a Message</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 text-center">
+                    <ul class="footer-list">
+                        <li><a href="donate.html" class="footer-link" align="right"><b>Donate</a></li>
+                  
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-block d-sm-none">
+            <hr>
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="social-media-icons-footer">
+                            <li class="facebook-footer"><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="twitter-footer"><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li class="youtube-footer"><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li class="instagram-footer"><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/donate.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
